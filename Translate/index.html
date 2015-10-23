@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=false, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />       
+        <title>JLC: dynamic translations AngularJS</title>
+    </head>
+    <body ng-app="global">
+        <div ng-controller="globalCtrl">
+                <h1>{{translation.Hellotxt}}</h1>
+				 <button ng-click="changeLanguage('es')">{{translation.Spanish}}</button>
+				 <button ng-click="changeLanguage('en')">{{translation.English}}</button>
+				 <button ng-click="changeLanguage('ch')">{{translation.Chinese}}</button>
+
+        </div>
+        
+        <!-- libs -->
+        <script type="text/javascript" src="js/libs/angular.min.js"></script>
+
+        <!-- my app -->
+        <script type="text/javascript" src="js/global.js"></script>
+
+    </body>
+</html>
